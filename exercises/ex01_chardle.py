@@ -1,4 +1,4 @@
-"""EX01 - Chardle - A cute step toward Wordle"""
+"""EX01 - Chardle - A cute step toward Wordle."""
 
 __author__ = "730572335"
 
@@ -32,3 +32,13 @@ if len(wordle_word) == 5:
         letter_counter = letter_counter + 1
     if letter_counter == 0:
         print("No instances of " + input_letter + " found in " + wordle_word)
+    if letter_counter == 1:
+        print("1 instance of " + input_letter + " found in " + wordle_word)
+    if letter_counter == 2:
+        print("2 instances of " + input_letter + " found in " + wordle_word)
+    if letter_counter == 3:
+        print("3 instances of " + input_letter + " found in " + wordle_word)
+    if letter_counter == 4:
+        print("4 instances of " + input_letter + " found in " + wordle_word)
+    if letter_counter == 5:
+        print("5 instances of " + input_letter + " found in " + wordle_word)
