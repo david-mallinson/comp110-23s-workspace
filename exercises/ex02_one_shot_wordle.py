@@ -28,7 +28,7 @@ while x < len(word):
                 match = True
             else:
                 s = s + 1
-        if match == True:
+        if match is True:
             result_string = result_string + YELLOW
             x = x + 1
             match = False

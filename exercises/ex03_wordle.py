@@ -1,5 +1,8 @@
 """EX03 - Wordle"""
 __author__ = "730572335"
+GREEN: str = ("\U0001F7E9")
+YELLOW: str = ("\U0001F7E8")
+WHITE: str = ("\U00002B1C")
 
 def contains_char (search: str, single_char: str) -> bool:
     """Sorts through each letter of the string and returns True or False"""
@@ -39,9 +42,6 @@ def emojified (wordle_word: str, input_guess: str) -> str:
     assert len(input_guess) == len(wordle_word)
     counter: int = 0
     
-    GREEN: str = ("\U0001F7E9")
-    YELLOW: str = ("\U0001F7E8")
-    WHITE: str = ("\U00002B1C")
     result_str: str = ""
 
     while counter < len(wordle_word):
