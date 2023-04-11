@@ -38,17 +38,18 @@ def columnar(table: list[dict[str, str]]) -> dict[str, list[str]]:
 
 
 def head(table: dict[str, list[str]], rows: int) -> dict[str, list[str]]:
-    """Produces a new column-based table with only the first N rows of data for each column."""
+    """Produces a new column-based table with only the first rows of data for each column."""
     result: dict[str, list[str]] = {}
     for key in table:
         sub_list: list[str] = []
-        data_to_get: list[str] = table[key]
+        data_get: list[str] = table[key]
         idx: int = 0
-        while idx < rows:
-            sub_list.append(data_to_get[idx])
+        while idx < rows and idx < len(data_get):
+            sub_list.append(data_get[idx])
             idx += 1
         result[key] = sub_list
     return result
+
 
 
 def select(user_table: dict[str, list[str]], columns: list[str]) -> dict[str, list[str]]:
