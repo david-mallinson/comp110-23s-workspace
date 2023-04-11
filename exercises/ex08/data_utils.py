@@ -44,9 +44,10 @@ def head(table: dict[str, list[str]], rows: int) -> dict[str, list[str]]:
         sub_list: list[str] = []
         data_get: list[str] = table[key]
         idx: int = 0
-        while idx < rows and idx < len(data_get):
-            sub_list.append(data_get[idx])
-            idx += 1
+        if data_get:
+            while idx < rows and idx < len(data_get):
+                sub_list.append(data_get[idx])
+                idx += 1
         result[key] = sub_list
     return result
 
