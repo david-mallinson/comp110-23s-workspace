@@ -1,14 +1,14 @@
-secret: int = 3
-guess: int = 1
+from __future__ import annotations
 
-guess: int = 2
-    print("Success!")
-    print(str(guess) + " is the secret number!")
-else:
-    guess = guess + 1
-    if guess == secret:
-        print("Success on 2nd try!")
-    else:
-        print("Wrong guess. :(")
-        if (guess == secret - 1):
-            print("Hint: The guess of "+ str(guess) + "is off by only one number!")
+class Point:
+
+
+
+    def __init__(self, x: float, y: float):
+        self.x = x
+        self.y = y
+
+
+
+    def __add__(self,rhs: float) -> Point:
+        new_x
