@@ -1,5 +1,9 @@
 """File to define Bear class"""
 
+
+__author__ = "730572335"
+
+
 class Bear:
     """Makes a type Bear class."""
     age: int
@@ -19,5 +23,5 @@ class Bear:
     
     def eat(self, num_fish: int) -> None:
         """Changes the hunger score of bears depending on the number of fish."""
-        for _ in range(num_fish):
+        for i in range(num_fish):
             self.hunger_score += 1

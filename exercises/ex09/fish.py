@@ -3,9 +3,10 @@
 
 __author__ = "730572335"
 
+
 class Fish:
     """Makes a type fish class."""
-    age: int
+    age: int = 0
 
     def __init__(self):
         """Constructs the age."""
